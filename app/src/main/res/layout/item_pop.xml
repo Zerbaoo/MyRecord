@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="128dp"
+    android:layout_height="50dp"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:id="@+id/ll_pop"
+        android:layout_width="128dp"
+        android:layout_height="32dp"
+        android:background="@drawable/pop_bg"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:id="@+id/tv_favor"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="收藏"
+            android:visibility="gone"
+            android:textColor="@android:color/white"
+            />
+
+        <View
+            android:visibility="gone"
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:background="@android:color/white"
+            />
+
+        <TextView
+            android:id="@+id/tv_delete"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="删除"
+            android:textColor="@android:color/white"
+            />
+
+
+    </LinearLayout>
+
+
+    <View
+        android:layout_width="22dp"
+        android:layout_height="16dp"
+        android:layout_gravity="center"
+        android:layout_marginLeft="18dp"
+        android:background="@drawable/sp_triangle"
+
+        />
+
+</LinearLayout>

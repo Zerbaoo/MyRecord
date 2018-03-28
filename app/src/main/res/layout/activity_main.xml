@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="record.my.com.myrecord.MainActivity">
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <View
+            android:layout_width="match_parent"
+            android:layout_height="500dp"/>
+                <RelativeLayout
+                    android:id="@+id/rl_raidoview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/iv_avatar"
+                        android:layout_width="42dp"
+                        android:layout_height="42dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginLeft="3dp"
+                        android:layout_marginRight="3dp"
+                        android:src="@drawable/w3"
+                        />
+
+
+                    <TextView
+                        android:focusableInTouchMode="true"
+                        android:clickable="true"
+                        android:id="@+id/tv_chatbox"
+                        android:layout_width="120dp"
+                        android:layout_height="40dp"
+                        android:layout_centerVertical="true"
+                        android:layout_toLeftOf="@id/iv_avatar"
+                        android:background="@drawable/chatbox_selector"
+                        />
+
+                    <ImageView
+                        android:clickable="false"
+                        android:id="@+id/iv_record"
+                        android:layout_width="22dp"
+                        android:layout_height="22dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="18dp"
+                        android:layout_toLeftOf="@id/iv_avatar"
+                        />
+
+                    <TextView
+                        android:id="@+id/tv_duration"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="5dp"
+                        android:layout_toLeftOf="@id/tv_chatbox"
+                        />
+
+                </RelativeLayout>
+
+
+    <record.my.com.myrecord.AudioRecordButton
+        android:layout_gravity="center_vertical"
+        android:id="@+id/bt_speak"
+        android:background="@drawable/bt_bg_normal"
+        android:layout_width="match_parent"
+        android:height="20dp"
+        android:minHeight="0dp"
+        android:textColor="#424242"
+        android:textSize="16sp"
+        android:layout_height="35dp"
+        android:text="@string/str_recorder_normal" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="转换"
+        android:id="@+id/filetobase64"/>
+
+
+    <RelativeLayout
+        android:id="@+id/rl_raidoview1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/iv_avatar1"
+            android:layout_width="42dp"
+            android:layout_height="42dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="3dp"
+            android:src="@drawable/w3"
+            />
+
+
+        <TextView
+            android:focusableInTouchMode="true"
+            android:clickable="true"
+            android:id="@+id/tv_chatbox1"
+            android:layout_width="120dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/iv_avatar1"
+            android:background="@drawable/chatbox_selector"
+            />
+
+        <ImageView
+            android:clickable="false"
+            android:id="@+id/iv_record1"
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="18dp"
+            android:layout_toLeftOf="@id/iv_avatar1"
+            />
+
+        <TextView
+            android:id="@+id/tv_duration1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:layout_toLeftOf="@id/tv_chatbox1"
+            />
+
+    </RelativeLayout>
+
+</LinearLayout>
+    </ScrollView>
+</LinearLayout>
